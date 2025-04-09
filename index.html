@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    
+    <title> Meine Lieblingsrezepte </title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Lieblingsrezepte</h1>
+        <a href="index.html"> Startseite </a>
+        <a href="vorspeisen.html"> Vorspeisen </a>
+        <a href="hauptspeisen.html"> Hauptspeisen </a>
+        <a href="desserts.html"> Desserts </a>
+        <a href="weiteres.html"> Weiteres </a>
+    </div>
+    
+    <div class="container">
+        <h1>Willkommen bei meinen Lieblingsrezepten</h1>
+        <p>
+            Hier finden Sie eine Sammlung meiner besten Rezepten, unterteilt in <a href="vorspeisen.html">Vorspeisen,</a> <a href="hauptspeisen.html">Hauptspeisen</a>  und <a href="desserts.html"> Desserts</a>.<br>
+            
+            Entdecken Sie neue Speisen, lernen Sie neue Rezepte kennen und geniessen Sie die Vielfalt aus aller Welt.
+
+<br> 
+            Falls Sie auf der Suche nach einem neuen Rezept sind, dann sind Sie hier genau richtig.
+
+<br> Zudem können hier jeweils die Zutaten und den Zubereitungsanweisungen für jedes Rezept gefunden werden, die für die jeweiligen Gerichte gebraucht werden. 
+
+<br> <a href="Rezepte/Startseite_Bolognese.html"> Mein Favorit</a> wird fortlaufend aktualisiert, wobei es sich hier um auserwählte Köstlichkeiten handelt. 
+<br>
+<br> Viel Spass beim Geniessen und Nachkochen!
+<br> 
+<br> P.S. Eines meiner absoluten Favoriten ist der Blaubeermuffin, den man wirklich immer und überall verspeisen kann. Um das Rezept zu sehen, müssen Sie nur einmal auf das untenstehende Bild klicken. <br>
+        </p>
+   
+    <a href="Rezepte/Startseite_Muffin.html"><img src="Bilder/Muffin.jpeg" width="75%"></a>
+    </div>
+
+    
+    <script>
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.navbar a');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+
+        
+    
+</body>
+</html>

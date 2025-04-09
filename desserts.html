@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title> Desserts </title>
+   <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="navbar">
+        <h1> Lieblingsrezepte </h1>
+        <a href="index.html">Startseite</a>
+        <a href="vorspeisen.html">Vorspeisen</a>
+        <a href="hauptspeisen.html">Hauptspeisen</a>
+        <a href="desserts.html">Desserts</a>
+        <a href="weiteres.html">Weiteres</a>
+    </div>
+
+    <div class="header-banner">
+        <img src="Bilder/Zwetschgenkuchen.jpeg" alt="Titelbild">
+        <div class="header-text">Desserts</div>
+    </div>
+
+    <div class="image-container">
+        <div class="recipe-card">
+            <a href="Rezepte/Zwetschgenkuchen.html" >
+                <img src="Bilder/Zwetschgenkuchen.jpeg" alt="Zwetschgenkuchen">
+            </a>
+            <div class="recipe-title">Zwetschgenkuchen</div>
+        </div>
+        
+        <div class="recipe-card">
+            <a href="Rezepte/Apfelstrudel.html"> 
+                <img src="Bilder/Apfelstrudel.jpeg" alt="Apfelstrudel">
+            </a>
+            <div class="recipe-title">Apfelstrudel</div>
+        </div>
+            
+        <div class="recipe-card">
+            <a href="Rezepte/Muffin.html">
+                <img src="Bilder/Muffin.jpeg" alt="Muffin">
+            </a>
+            <div class="recipe-title">Blaubeermuffin</div>
+        </div>
+
+        <div class="recipe-card">
+            <a href="Rezepte/Apfelwaehe.html">
+                <img src="Bilder/Apfelwaehe.jpeg" alt="Apfelwähe">
+            </a>
+            <div class="recipe-title">Apfelwähe</div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.navbar a');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+</html>

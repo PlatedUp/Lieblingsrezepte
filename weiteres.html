@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title> Weiteres </title>
+   <link rel="stylesheet"href="style.css"> 
+</head>
+<body>
+    <div class="navbar">
+        <h1> Lieblingsrezepte </h1>
+        <a href="index.html">Startseite</a>
+        <a href="vorspeisen.html">Vorspeisen</a>
+        <a href="hauptspeisen.html">Hauptspeisen</a>
+        <a href="desserts.html">Dessert</a>
+        <a href="weiteres.html">Weiteres</a>
+    </div>
+
+
+
+
+    <div class="container">
+        <h1>Weitere Informationen und Links </h1>
+        <p>
+            Hier finden Sie weitere Links und Informationen. <br>
+
+        <a href="Tipps/ernaehrungstipps.html">Unter diesem Link</a> können Ernährungstipps angesehen werden. Für einen gesunden Körper ist eine abwechslungsreiche und durchdachte Ernährung etwas Wichtiges, das man auf jeden Fall berücksichtigen sollte.  <br>
+            Zudem sollte auf <a href="Tipps/produkte.html">frische und regionale Produkte</a> gesetzt werden, da diese Produkte in der Regel mehr Nährstoffe und weniger schädliche Stoffe enthalten. <br>
+
+
+            
+    <script>
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.navbar a');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

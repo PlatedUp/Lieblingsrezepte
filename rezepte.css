@@ -1,0 +1,62 @@
+
+    body {
+        background-color: #C0C0c0;
+        font-family: Arial, sans-serif;
+        text-align: left;
+        
+    }
+
+    
+
+    .container {
+        max-width: 700px;
+        background: white;
+        padding: 20px;
+        margin: 50px auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+        color: #26495c ;
+    }
+
+    h2 {
+        color: #26495c ;
+    } 
+
+    .li {
+        color: #26495c ;
+    }
+
+    img {
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .recipe {
+        text-align: left;
+        line-height: 1.6;
+    }
+   
+
+    button:hover, a:hover {
+      background-color: #4D648D;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    button, a {
+        padding: 12px 12px; 
+        font-size: 18px;     
+        border: none;
+        border-radius: 8px;
+        background-color: #2E3B55;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+
+   .star-rating span {
+       font-size: 30px;
+       color: #FFD700;
+   }
